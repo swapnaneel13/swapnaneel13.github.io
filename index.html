@@ -1,74 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
-    <!-- This links to your CSS file, which we'll create next -->
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Swapnaneel Bhattacharyya</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    /* tiny extras just for section labels */
+    .about h3{margin:22px 0 10px 0; font-size:20px}
+    .about ul{margin:0 0 12px 18px}
+  </style>
 </head>
 <body>
+  <!-- Top Nav -->
+  <header class="navbar">
+    <div class="brand">Swapnaneel Bhattacharyya</div>
+    <nav class="links">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="cv.html">CV</a>
+    </nav>
+  </header>
 
-    <!-- Header & Navigation -->
-    <header>
-        <h1>Your Name</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="#">Projects</a>
-            <a href="#">Experience</a>
-            <a href="your-cv.pdf">CV</a>
-        </nav>
-    </header>
+  <main class="container">
+    <section class="about">
+      <div>
+        <h1>About Me</h1>
 
-    <!-- Main Content Area -->
-    <div class="container">
-        
-        <!-- This is the main column -->
-        <main>
-            <section id="about">
-                <h2>About Me</h2>
-                <p>
-                    Write your bio here. Talk about your studies, your work, 
-                    and your interests. Keep it a few paragraphs long.
-                </p>
-            </section>
+        <p>
+          I am <strong>Swapnaneel Bhattacharyya</strong>, a final-year <strong>M.Stat</strong> student at the
+          <strong>Indian Statistical Institute (ISI)</strong>, Kolkata. Previously I had done
+          <strong>Bachelor's of Statistics (B.Stat)</strong> from the same university.
+        </p>
 
-            <section id="projects">
-                <h2>Projects / Publications</h2>
-                <!-- Use a list for your projects -->
-                <ul>
-                    <li>
-                        <strong>Project Title 1:</strong> A brief description of your
-                        project. <a href="#">Link to project</a>
-                    </li>
-                    <li>
-                        <strong>Project Title 2:</strong> A brief description of your
-                        second project. <a href="#">Link to code</a>
-                    </li>
-                </ul>
-            </section>
+        <p>
+          I have been fortunate to participate in research internships/visits at the
+          <strong>Department of Statistics and Data Science, Carnegie Mellon University</strong> (Summer 2025),
+          and at the <strong>Big Data Summer Institute</strong>, School of Public Health,
+          <strong>University of Michigan</strong> (Summer 2024).
+        </p>
 
-            <section id="awards">
-                <h2>Awards & Achievements</h2>
-                <ul>
-                    <li>Awarded [Name of Award] (Year)</li>
-                    <li>Won [Name of Competition] (Year)</li>
-                </ul>
-            </section>
-        </main>
+        <h3>Research Interests</h3>
+        <ul>
+          <li>Conformal prediction</li>
+          <li>Changepoint detection</li>
+          <li>Sequential decision making</li>
+          <li>Causal inference</li>
+        </ul>
 
-        <!-- This is the sidebar column -->
-        <aside>
-            <img src="profile.jpg" alt="Your Name">
-            <!-- Save your profile picture as "profile.jpg" in the same folder -->
-        </aside>
+        <h3>Achievements</h3>
+        <ul>
+          <li>Received <strong>ISIAA - Mrs. M. R. Iyer Memorial Gold Medal Award</strong> for outstanding overall performance and securing the first position in the B.Stat (Hons.) 2021–2024 batch.</li>
+          <li>Received cash award in all semesters for outstanding performance.</li>
+          <li>Secured a national rank of <strong>3</strong> in the Regional Mathematical Olympiad (HBCSE), 2018 (during high school).</li>
+        </ul>
+      </div>
 
-    </div>
+      <!-- Right column: portrait + icons -->
+      <aside>
+        <div class="portrait-card">
+          <img class="portrait" src="assets/profile.jpg" alt="Swapnaneel Bhattacharyya portrait">
+          <div class="icon-row">
+            <!-- Google Scholar -->
+            <a class="icon-btn" aria-label="Google Scholar"
+               href="https://scholar.google.com/citations?user=uDHaaI8AAAAJ&hl=en" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+                <path d="M12 2 1 9l11 7 9-5.73V17h2V9L12 2zm0 9.27L5.74 9 12 4.73 18.26 9 12 11.27zM4 13v5h5v-2H6v-3H4z"/>
+              </svg>
+            </a>
+            <!-- Email -->
+            <a class="icon-btn" aria-label="Email"
+               href="mailto:swapnaneelbhattacharyya@gmail.com">
+              <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+                <path d="M20 4H4c-1.1 0-2 .9-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5-8-5V6l8 5 8-5v2Z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </aside>
+    </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2025 Your Name</p>
-    </footer>
+    <p class="footer">© <span id="year"></span> Swapnaneel Bhattacharyya</p>
+  </main>
 
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
