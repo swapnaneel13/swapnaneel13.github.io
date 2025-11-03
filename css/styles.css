@@ -84,7 +84,7 @@ h1, h2, h3 {
   font-weight: 700;
 }
 
-  p {
+p {
   text-align: justify;
   text-justify: inter-word;
 }
@@ -92,6 +92,7 @@ h1, h2, h3 {
 
 /* Footer (tiny) */
 .footer{color:var(--muted); font-size:13px; margin-top:36px}
+
 
 
 
