@@ -79,6 +79,12 @@ a{color:var(--link)}
   background:var(--card); padding:12px; border-radius:14px; box-shadow:var(--shadow);
 }
 
+h1, h2, h3 {
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 700;
+}
+
 /* Footer (tiny) */
 .footer{color:var(--muted); font-size:13px; margin-top:36px}
+
 
